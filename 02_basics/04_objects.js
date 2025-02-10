@@ -44,11 +44,34 @@ console.log(Object.entries(user));
 console.log(user.hasOwnProperty('name'));
 console.log(user.hasOwnProperty('naming'));
 
+// Destructuring a value or an object
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// console.log(course.courseInstructor);
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+// json
+// {
+//     "name": "Subrata",
+//     "course": "js in hindi",
+//     "fees": free
+// }
 
 
-
-
-
+[
+    {},
+    {},
+    {}
+]
 
 
 
