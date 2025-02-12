@@ -1,0 +1,58 @@
+Javascript execution context
+
+1. Global Execution Context (EC) => this
+JS is single threaded, everything inside it is a process
+
+2. Function Execution Context
+
+3. Eval
+
+Memory Creation Phase i.e. memory allocation
+Execution Phase
+
+Example:
+
+let val1 = 10
+let val2 = 5
+function addNum(val1, val2) {
+    let total = val1 + val2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 2)
+
+
+1. Global execution -> this
+
+2. Memory Phase
+
+val1: undefined
+val2: undefined
+addNum: definition
+result1: undefined
+result2: undefined
+
+3. Execution Phase
+
+val1: 10
+val2: 5
+addNum -> new variable environment + execution thread 
+After its work it gets deleted
+Inside addNum:
+1. Memory Phase
+val1: undefined
+val2: undefined
+total: undefined
+
+2. Execution Phase
+val1: 10
+val2: 5
+total: 15
+
+Then it return to global execution phase
+
+
+
+Call Stack:
+
+Global EC is always there
