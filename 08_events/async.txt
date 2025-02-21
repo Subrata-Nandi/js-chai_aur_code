@@ -1,0 +1,3 @@
+JS is synchronous and single threaded -> default behaviour
+
+each operation waits for the last one to complete before executing
